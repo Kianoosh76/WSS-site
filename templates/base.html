@@ -37,9 +37,15 @@
     <!--<link rel="stylesheet" href="{% static 'css/plyr.css' %}">-->
 
     <!-- All css files combined into one sigle file -->
-    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/all.min.css' %}">  {% endcomment %}
     <!-- Template styles-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3.5.3">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3.5.3"> {% endcomment %}
+    
+    <link rel="stylesheet" href="{% static 'css/cs.css' %}"> 
+    <link rel="stylesheet" href="{% static 'js/flipclock.css'%}"> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 
     <!-- Map -->
@@ -55,7 +61,6 @@
 </head>
 
 <body>
-<div class="body-inner">
     {% block header %}
         <!-- Header start -->
         <header id="header" class="header-dark">
@@ -97,7 +102,7 @@
     {% block content %}
     {% endblock %}
 
-    <footer id="footer" class="footer text-center">
+    {% comment %} <footer id="footer" class="footer text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -144,7 +149,7 @@
         <!-- Container end -->
 
         <!--<div id="back-to-top" data-spy="affix" data-offset-top="10" class="header affix"></div>-->
-    </footer>
+    </footer> {% endcomment %}
     <!-- Footer end -->
 
     <!-- Javascript Files
@@ -169,13 +174,16 @@
     <!--<script>plyr.setup();</script>-->
 
     <!-- All js files combined into one file -->
-    <script type="text/javascript" src="{% static 'js/all.min.js' %}"></script>
+    {% comment %} <script type="text/javascript" src="{% static 'js/all.min.js' %}"></script> {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/flipclock.js' %}"></script>
 
-    <!-- Template custom -->
-    <script type="text/javascript" src="{% static 'js/custom.js' %}?v=3"></script>
+    {% comment %} <!-- Template custom --> {% endcomment %}
+    {% comment %} <script type="text/javascript" src="{% static 'js/custom.js' %}?v=3"></script> {% endcomment %}
+    {% comment %} <script src="{% static 'js/flipclock.min.js'%}"> {% endcomment %}
+    
 
-
-</div>
-<!-- Body inner end -->
 </body>
 </html>
