@@ -20,7 +20,15 @@ body, html
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
+    }
+
+@media (max-width: 580px) {
+    #title-image {
+        width: 70% !important;
+    }
 }
+
 #title-image
 {
     width: 40%;
@@ -107,6 +115,11 @@ span{
     padding-bottom: 0.5rem;
     color: white!important;
 }
+@media (max-width: 350px) {
+    .countdown .number {
+        font-size: 2.5rem;
+    }
+}
 
 .countdown .minutes, .countdown-labels .minutes
 {
@@ -124,4 +137,92 @@ span{
 {
     color: #61fdfe;
     border-color: #61fdfe;
+}
+
+
+.footer-social{
+    margin: 40px 0;
+}
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-social ul li {
+    margin: 0 15px;
+    display: inline-block;
+}
+.footer-social ul li a i {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.fa-instagram:before{
+    margin-left: 1px!important;
+}
+.fa-telegram:before{
+    margin-left: -1px!important;
+}
+
+.footer-social ul li a i:after{
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(255,255,255,0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+}
+
+.footer-social ul li a:hover i:after {
+    border: 1px solid #446CB3;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.footer-social ul li a:hover {
+    text-decoration: none;
+}
+
+
+.footer-social ul li a i:hover {
+    color: #fff;
+}
+.footer-social ul li a .fa-instagram {
+    color: #d32a1e;
+}
+.footer-social ul li a .fa-facebook {
+    color: #677fb5;
+}
+.footer-social ul li a .fa-twitter {
+    color: #70c2e9;
+}
+.footer-social ul li a .fa-google-plus {
+    color: #c53942;
+}
+.footer-social ul li a .fa-linkedin {
+    color: #3daccf;
+}
+
+.footer-social ul li a .fa-youtube {
+    color: #bb0000;
+}
+
+.footer-social ul li a .fa-telegram {
+    color: #259ace;
 }

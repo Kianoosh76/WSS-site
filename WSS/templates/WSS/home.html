@@ -5,24 +5,24 @@
 
 {% block header %}
 <video autoplay muted loop id="bg">
-    <source src="{% static 'images/bg.mp4' %}" type="video/mp4">
+    <source src="{% static 'images/bg.mp4' %}?v=1.1.7" type="video/mp4">
 </video>
-<div class="container-fluid h-100 ">
+<div class="container-fluid ">
 	<div class="container">
 		<div class="font row justify-content-center py-xl-4">
 			<div class="mt-2 mt-xl-0 col-xl-3 order-xl-1 order-3 flex-grow-1 align-items-center justify-content-center">
 
 				<div class="row my-auto align-items-center text-center justify-content-center h-100 ">
 					<div class="col justify-content-center text-center align-items-center">
-						<div class="row justify-content-center text-center align-items-center">
-							<i class="icon fa fa-telegram mx-2"></i>
-							<i class="icon fa fa-instagram mx-2"></i>
-						</div>
-						<div class="mx-auto my-2 bold-text">
-							WSS_SUT
-						</div>
 						<div class="d-none d-xl-block row justify-content-center text-center align-items-center">
-							<img src="{% static 'images/logo.png' %}" style="width:3rem;	">
+							<img style="max-height: 4.5rem;" src="{% static 'images/sharif.png' %}"/>
+						</div>
+
+						<div class="mt-4 d-none d-xl-block row justify-content-center text-center align-items-center">
+							<img style="max-height: 3rem;" src="{% static 'images/ssc.png' %}"/>
+						</div>
+						<div class="mt-4 d-none d-xl-block row justify-content-center text-center align-items-center">
+							<img src="{% static 'images/logo.png' %}" style="max-height:3.5rem;	">
 						</div>
 						<div class="d-none d-xl-block mx-auto my-2 bold-text">
 							2019
@@ -61,24 +61,24 @@
 				ADVANCED TOPICS IN <br/> COMPUTER SCIENCE AND ENGINEERING
 			</div>
 		</div>
-            <div dir="ltr" class="countdown mt-3 mx-lg-6 row justify-content-center align-items-center description text-center">
-                <div class="col">
-                    <div class="number days"></div>
-                </div>
-                :
-                <div class="col">
-                    <div class="number hours"></div>
-                </div>
-                :
-                <div class="col">
-                    <div class="number minutes"></div>
-                </div>
-                :
-                <div class="col">
-                    <div class="number seconds"></div>
-                </div>
+        <div dir="ltr" class="countdown mt-3 mx-lg-6 row justify-content-center align-items-center text-center">
+            <div class="col">
+                <div class="number days"></div>
             </div>
-            <div dir="ltr" class="countdown-labels mt-1 row justify-content-center align-items-center description text-center">
+            :
+            <div class="col">
+                <div class="number hours"></div>
+            </div>
+            :
+            <div class="col">
+                <div class="number minutes"></div>
+            </div>
+            :
+            <div class="col">
+                <div class="number seconds"></div>
+            </div>
+        </div>
+        <div dir="ltr" class="countdown-labels mt-1 row justify-content-center align-items-center text-center">
 
                 <div class="col">
                     <div class="days">Days</div>
@@ -93,6 +93,20 @@
                     <div class="seconds">Seconds</div>
                 </div>
             </div>
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="d-xl-none mt-5 row justify-content-center text-center align-items-center">
+                <img class="ml-5" style="max-height: 4rem;" src="{% static 'images/sharif.png' %}"/>
+                <img style="max-height: 3rem;" src="{% static 'images/ssc.png' %}"/>
+            </div>
+        </div>
+        <div class="footer-social text-center">
+            <ul>
+                {% for external_link in external_links %}
+                    <li><a href="{{ external_link.url }}"><i class="fa fa-{{ external_link.type }}"></i></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
 	</div>
 </div>
 
