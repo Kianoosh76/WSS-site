@@ -200,29 +200,6 @@ span{
 }
 
 
-.footer-social ul li a i:hover {
+.footer-social ul li a i{
     color: #fff;
-}
-.footer-social ul li a .fa-instagram {
-    color: #d32a1e;
-}
-.footer-social ul li a .fa-facebook {
-    color: #677fb5;
-}
-.footer-social ul li a .fa-twitter {
-    color: #70c2e9;
-}
-.footer-social ul li a .fa-google-plus {
-    color: #c53942;
-}
-.footer-social ul li a .fa-linkedin {
-    color: #3daccf;
-}
-
-.footer-social ul li a .fa-youtube {
-    color: #bb0000;
-}
-
-.footer-social ul li a .fa-telegram {
-    color: #259ace;
 }
