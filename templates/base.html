@@ -59,40 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% block header %}
         <!-- Header start -->
-        <header id="header" class="header-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="site-nav-inner">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <nav class="collapse navbar-collapse navbar-responsive-collapse pull-right">
-                            <ul class="nav navbar-nav">
-                                {% block navbar_items %}
-                                    <li><a href="{% url 'wss:home' %}">Home</a></li>
-                                    <!-- Home li end -->
-                                    <li class="header-ticket">
-                                        <a href="{% url 'wss:home' %}" class="ticket-btn btn-primary">Visit the last
-                                            seminar page</a>
-                                    </li>
-                                {% endblock %}
-                                <!-- Register li end -->
-                            </ul>
-                            <!--/ Nav ul end -->
-                        </nav>
-                        <!--/ Collapse end -->
-                    </div>
-                    <!--/ Site nav inner end -->
-                </div>
-                <!--/ Row end -->
-            </div>
-            <!--/ Container end -->
-        </header>
-        <!--/ Header end -->
+       <!--/ Header end -->
     {% endblock %}
     
 

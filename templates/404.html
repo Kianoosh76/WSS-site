@@ -4,21 +4,19 @@
 {% block title %}Page Not Found{% endblock %}
 
 {% block content %}
-
-	<section id="main-container" class="main-container">
-		<div class="container">
+	<section  id="main-container" class="main-container">
+		<div class="container w-100">
 			<div class="row">
-
-				<div class="error-page text-center">
+				<div class="error-page text-center  mx-auto">
 					<div class="error-code">
 						<h2><strong>404</strong></h2>
 					</div>
-					<div class="error-message">
+					<div class="error-message" style="direction: ltr">
 						<h3>Oops... Page Not Found!</h3>
 					</div>
 					<div class="error-body">
 						Try using the button below to go to main page of the site <br>
-						<a href="index.html" class="btn btn-primary">Back to Home Page</a>
+						<a href="{% url 'wss:home' %}" class="btn btn-primary">Back to Home Page</a>
 					</div>
 				</div>
 
