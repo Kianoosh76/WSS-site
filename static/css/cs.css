@@ -203,3 +203,15 @@ span{
 .footer-social ul li a i{
     color: #fff;
 }
+
+#poster-reg
+{
+    background: white; 
+    border: none;
+    transition: all 0.25s;
+}
+
+#poster-reg:hover{
+    /* width: 300px; */
+    background: #61fdfe;
+}
